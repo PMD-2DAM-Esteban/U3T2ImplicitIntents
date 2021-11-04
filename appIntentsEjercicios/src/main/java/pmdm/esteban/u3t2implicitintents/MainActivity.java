@@ -15,7 +15,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final String IMPLICIT_INTENTS= "ImplicitIntents";
-    private EditText etUri, etLocation, etText;
+    private EditText etUri, etLocation, etText, zoomText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         etUri= findViewById(R.id.etUri);
         etLocation = findViewById(R.id.etLocation);
         etText= findViewById(R.id.etText);
+        zoomText= findViewById(R.id.zoom);
 
         btOpenUri= findViewById(R.id.btOpenUri);
         btOpenLocation= findViewById(R.id.btOpenLocation);
@@ -43,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     private void openWebsite(String urlText){
+
 
         //Parse the Uri and create the intent
         Uri webpage = Uri.parse(urlText);
@@ -59,10 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void openLocation(String location){
         //Se puede cordenadas o texto, en nuestro caso texto
-
+        String zoomString= zoomText.getText().toString();
         //Parse the location and create the intent
 
-        Uri addressUri= Uri.parse("geo:0,0?q=" + location);
+        Uri addressUri= Uri.parse("geo:0,0?q=" + location + "?z="+zoomString) ;
         Intent intent= new Intent(Intent.ACTION_VIEW, addressUri);
 
         //Find an activity to hand the intent and start that activity
