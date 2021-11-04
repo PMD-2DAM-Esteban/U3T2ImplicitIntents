@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "U3T2ImplicitIntents"
 include ':app'
+include ':appIntentsEjercicios'
