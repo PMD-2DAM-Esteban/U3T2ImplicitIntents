@@ -4,11 +4,12 @@
 
     <queries>
         <intent>
-            <action android:name="android.intent.action.VIEW"/>
-            <data android:mimeType="text/plain"/>
-        </intent>
-        <package android:name="com.google.android.apps.maps" />
+            <action android:name="android.intent.action.VIEW" />
 
+            <data android:mimeType="text/plain" />
+        </intent>
+
+        <package android:name="com.google.android.apps.maps" />
     </queries>
 
     <application
@@ -18,6 +19,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.U3T2ImplicitIntents">
+        <activity
+            android:name=".MoreIntents"
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

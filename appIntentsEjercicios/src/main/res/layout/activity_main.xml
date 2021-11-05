@@ -11,32 +11,31 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="200dp" />
+        app:layout_constraintGuide_end="531dp" />
 
     <EditText
         android:id="@+id/etUri"
-        android:layout_width="405dp"
-        android:layout_height="45dp"
+        android:layout_width="367dp"
+        android:layout_height="40dp"
         android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/et_uri"
         app:layout_constraintBottom_toTopOf="@+id/btOpenUri"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.033" />
 
     <Button
         android:id="@+id/btOpenUri"
-        android:layout_width="308dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="28dp"
+        android:layout_width="295dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="14dp"
         android:text="@string/bt_open_uri"
         app:layout_constraintBottom_toTopOf="@+id/etLocation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -48,26 +47,26 @@
 
     <EditText
         android:id="@+id/etLocation"
-        android:layout_width="404dp"
-        android:layout_height="47dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="28dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/et_location"
         app:layout_constraintBottom_toTopOf="@+id/btOpenLocation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btOpenLocation"
-        android:layout_width="306dp"
-        android:layout_height="52dp"
+        android:layout_width="289dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="24dp"
         android:text="@string/bt_open_location"
-        app:layout_constraintBottom_toTopOf="@+id/zoom"
+        app:layout_constraintBottom_toTopOf="@+id/zoomNum"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.18"
         app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
@@ -79,25 +78,26 @@
 
     <EditText
         android:id="@+id/etText"
-        android:layout_width="410dp"
-        android:layout_height="46dp"
+        android:layout_width="373dp"
+        android:layout_height="47dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/et_text"
         app:layout_constraintBottom_toTopOf="@+id/btShareText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btShareText"
-        android:layout_width="303dp"
-        android:layout_height="53dp"
-        android:layout_marginBottom="160dp"
+        android:layout_width="296dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="104dp"
         android:text="@string/bt_share_text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toTopOf="@+id/moreIntents"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.191"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline6"
@@ -107,16 +107,34 @@
         app:layout_constraintGuide_begin="310dp" />
 
     <EditText
-        android:id="@+id/zoom"
+        android:id="@+id/zoomNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="@string/text_zoom"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/etText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <Button
+        android:id="@+id/moreIntents"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="52dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/text_zoom"
-        app:layout_constraintBottom_toTopOf="@+id/etText"
+        android:text="@string/more_intents"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.223"
+        app:layout_constraintHorizontal_bias="0.081"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
