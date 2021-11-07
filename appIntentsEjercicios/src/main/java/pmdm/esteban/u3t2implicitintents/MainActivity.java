@@ -71,7 +71,7 @@ moreIntents.setOnClickListener(this);
         if (!(zoomInt>=1) || !(zoomInt<24)){
             throw new Exception("Numeros  de zoom mayor de 1 o menor de 24");
         }
-        Uri addressUri= Uri.parse("geo:0,0?z="+zoomInt+"&q="+location) ;
+        Uri addressUri= Uri.parse("geo:0,0?q="+location+"&z="+zoomNum) ;
         Intent intent= new Intent(Intent.ACTION_VIEW, addressUri);
 
         //Find an activity to hand the intent and start that activity

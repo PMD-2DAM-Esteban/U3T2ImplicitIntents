@@ -8,4 +8,13 @@
     <string name="bt_share_text">Share This Text</string>
     <string name="text_zoom">ZoomMaps</string>
     <string name="more_intents">MoreIntents</string>
+    <string name="nota_sujeto">Sujeto de la Nota</string>
+    <string name="nota_texto">Texto de la Nota</string>
+    <string name="bt_nota">Guardar Nota</string>
+    <string name="texto_Temporizador">Nombre Temporizador</string>
+    <string name="numero_Temporizador">Numero Temporizador</string>
+    <string name="bt_Temporizador">Guardar Temporizador</string>
+    <string name="numero_llamar">Numero a llamar</string>
+    <string name="bt_llamar">Llamar</string>
+
 </resources>
